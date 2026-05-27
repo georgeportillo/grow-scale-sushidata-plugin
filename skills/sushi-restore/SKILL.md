@@ -15,16 +15,13 @@ When triggered, pull prior session intelligence from the Sushidata context
 lake and brief the user on what was found. This replaces the need to reload
 a prior conversation.
 
-BASE URL: https://dashboard.sushidata.ai/public/019e0763-115f-716e-afc5-f6201e77ef1c/
-Tenant: Grow + Scale — Bolster
-Dataspace: Grow + Scale — Bolster Internal
+> Read `SETTINGS.md` at the plugin root for **BASE_URL**, **Tenant**, and **Dataspace**.
 
 ---
 
 ## Step 1 — Get the session ID
 
 Run:
-
 ```bash
 echo $PWD | grep -oP 'local_[a-f0-9-]+'
 ```
@@ -45,11 +42,11 @@ Content-Type: application/json
 
 ```json
 {
-	"query": "session restore — all saved context",
-	"tenant": "Sushidata",
-	"dataspace": "Sushidata Internal",
-	"threadId": "<cowork-session-id>",
-	"limit": 50
+  "query": "session restore — all saved context",
+  "tenant": "Sushidata",
+  "dataspace": "Sushidata Internal",
+  "threadId": "<cowork-session-id>",
+  "limit": 50
 }
 ```
 
@@ -64,10 +61,10 @@ Content-Type: application/json
 
 ```json
 {
-	"query": "recent session intelligence accounts contacts competitors documents",
-	"tenant": "Sushidata",
-	"dataspace": "Sushidata Internal",
-	"limit": 20
+  "query": "recent session intelligence accounts contacts competitors documents",
+  "tenant": "Sushidata",
+  "dataspace": "Sushidata Internal",
+  "limit": 20
 }
 ```
 
@@ -108,7 +105,6 @@ Present the findings as a clean, scannable brief:
 [For each category that has results:]
 
 #### [Category Name]
-
 - [Concise bullet per item — company name, person, document title, or signal
   type. One line each. Include the date it was saved if available.]
 
