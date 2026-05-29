@@ -4,7 +4,7 @@ All notable changes to the sushidata-gtm plugin are documented here.
 
 ---
 
-## [0.2.0] — 2026-05-20
+## [0.2.1] — 2026-05-20
 
 ### Added
 
@@ -52,7 +52,7 @@ All notable changes to the sushidata-gtm plugin are documented here.
 **`plugin.json`**
 
 - Added `homepage`, `repository`, and `license` fields (required for validation)
-- Version bumped to `0.2.0`
+- Version bumped to `0.2.1`
 
 ### Fixed
 
